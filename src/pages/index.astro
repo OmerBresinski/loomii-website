@@ -25,81 +25,71 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Get Started',
+        href: '#contact',
+        icon: 'tabler:rocket',
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Loomii Competitive Intelligence Platform' }}
   >
-    <Fragment slot="title">
-Loomii gives SMBs an unfair advantage.
-</Fragment>
+    <Fragment slot="title"> Loomii gives SMBs an unfair advantage. </Fragment>
 
-
-<Fragment slot="subtitle">
-  <span class="hidden sm:inline">
-    There are two kinds of businesses: those who know what’s happening—and those who find out too late.
-  </span>
-  <span class="block mb-1 sm:hidden font-bold text-blue-600">
-    Intelligence isn’t optional. It’s everything.
-  </span>
-</Fragment>
-
-
-
-
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        There are two kinds of businesses — those who know what's happening, and those who find out too late.
+      </span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"> Intelligence isn't optional. It's everything. </span>
+    </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Our Promise:" description="Real-time competitive intelligence to drive smarter decisions" />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    title="What you get with Loomii"
+    subtitle="The most comprehensive competitive intelligence platform for SMBs, delivering real-time insights from live market signals"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Real-time Competitor Monitoring',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Loomii uses AI to monitor your competitors across digital channels and deliver clear, actionable insights—so you always know what they’re doing, and what to do next.',
+        icon: 'tabler:eye',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'AI-Powered Insights',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Advanced AI analysis transforms raw data into actionable insights, helping you make informed business decisions.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Best Practices',
+        title: 'Actionable Recommendations',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'Get specific, practical recommendations with value and effort scores to help you prioritize your next moves.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Comprehensive Data Sources',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Access insights from websites, social media, job postings, web analytics, professional networks, social campaigns, news, and more — all in one place.',
+        icon: 'tabler:database',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'SMB-Focused Intelligence',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Tailored insights and recommendations designed specifically for small and medium-sized businesses.',
+        icon: 'tabler:building-store',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Easy-to-Use Platform',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Simple, intuitive interface that makes competitive intelligence accessible to businesses of any size.',
+        icon: 'tabler:device-desktop',
       },
     ]}
   />
@@ -108,33 +98,33 @@ Loomii gives SMBs an unfair advantage.
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="How it works"
+    title="Their Data. Your Advantage."
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Data Collection',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Automatically tracks competitor activity across digital channels—from sites and social to hiring and analytics.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'AI Analysis',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Advanced AI processes the data to identify trends, strategic moves, and opportunities in your market.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Actionable Insights',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Get clear, actionable recommendations with value and effort scores to help you make informed decisions.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      alt: 'Data Analysis Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Turn Data into Decisions</h3>
+      Make smarter business decisions with real-time competitive intelligence.
     </Fragment>
 
     <Fragment slot="bg">
@@ -148,31 +138,31 @@ Loomii gives SMBs an unfair advantage.
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Stay Ahead of Competitors',
+        description: `Monitor competitor activities in real-time to anticipate market changes and opportunities before they impact your business.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Make Informed Decisions',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Base your strategic decisions on data-driven insights rather than guesswork or outdated information.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Save Time and Resources',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Automate the collection and analysis of competitive intelligence, freeing up your team to focus on implementation.',
       },
       {
-        title: 'Integration of media',
+        title: 'Grow Your Business',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Use competitive insights to identify new opportunities, optimize your strategy, and drive sustainable growth.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      alt: 'Business Growth Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Empower your business with competitive intelligence.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -186,31 +176,31 @@ Loomii gives SMBs an unfair advantage.
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Real-time Monitoring',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Get instant alerts about competitor activities, market changes, and emerging trends that could impact your business.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Customizable Insights',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Tailor the platform to focus on the competitors, metrics, and insights that matter most to your business.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Easy Integration',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Seamlessly connect with your existing tools and workflows to make competitive intelligence part of your daily operations.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Expert Support',
+        description: `Access our team of competitive intelligence experts for guidance on using insights to drive your business forward.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      alt: 'Business Intelligence Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Designed for SMB success.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -220,25 +210,23 @@ Loomii gives SMBs an unfair advantage.
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get started with Loomii in three simple steps."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+        title: 'Step 1: <span class="font-medium">Sign In</span>',
+        description: 'Create your Loomii account in seconds. No setup hassle—just log in and you’re in.',
+        icon: 'tabler:login',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+        title: 'Step 2: <span class="font-medium">Enter Your Domain</span>',
+        description: 'Tell us your website. We’ll use it to personalize your competitive landscape automatically.',
+        icon: 'tabler:world-www',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Start Tracking</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Loomii gets to work instantly. Explore insights, spot opportunities, and stay ahead—no manual work needed.',
+        icon: 'tabler:rocket',
       },
       {
         title: 'Ready!',
@@ -247,13 +235,17 @@ Loomii gives SMBs an unfair advantage.
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'Getting Started Image',
     }}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Steps>
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -313,69 +305,64 @@ Loomii gives SMBs an unfair advantage.
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <!-- <BlogLatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    information={`The blog is used to display Loomii documentation.
+                        Each new article will be an important step that you will need to know to be an expert in using Loomii.
+                        Loomii is a very interesting technology. Thanks.
                 `}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Dive into the following questions to gain insights into the powerful features that Loomii offers and how it can elevate your business intelligence journey."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Why Loomii?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Loomii gives SMBs real-time competitive intelligence using AI. Track your competitors, spot key moves, and make faster, smarter decisions—just like enterprises.',
       },
       {
         title: 'What do I need to start?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Getting started with Loomii is easy. Just enter your company domain. Our AI handles the rest—detecting competitors, collecting data, and turning it into actionable insights..',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How does Loomii work?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Loomii uses advanced AI to analyze public data from competitor websites, social media, job boards, and web analytics. The platform identifies trends and opportunities, then provides actionable recommendations with value and effort scores to help you prioritize your next moves.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'What kind of insights will I get?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'You will receive real-time alerts about competitor activities, market changes, and emerging trends. Each insight includes specific recommendations with value and effort scores, helping you make informed decisions about your business strategy.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Is my data secure?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Yes, Loomii only analyzes publicly available data and never collects or stores your private business information. We maintain strict security protocols to ensure your account and preferences remain protected.',
       },
     ]}
   />
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -383,20 +370,51 @@ Loomii gives SMBs an unfair advantage.
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Send',
+        href: '#contact',
+        icon: 'tabler:rocket',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Book Your&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Demo Today</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      <form id="demo-form" class="mt-8 max-w-xl mx-auto">
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <label for="full-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Full Name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600"
+              required
+            />
+          </div>
+          <div>
+            <label for="job-title" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Job Title</label>
+            <input
+              type="text"
+              name="job-title"
+              id="job-title"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600"
+              required
+            />
+          </div>
+        </div>
+      </form>
     </Fragment>
   </CallToAction>
 </Layout>

@@ -1,4 +1,4 @@
-# 🚀 AstroWind
+# 🚀 Loomii
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
      alt="AstroWind Lighthouse Score" width="100" height="358">
@@ -63,7 +63,6 @@ We're embarking on an exciting journey with **AstroWind 2.0**, and we want you t
 [Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
 
 <br>
-
 
 ## TL;DR
 
