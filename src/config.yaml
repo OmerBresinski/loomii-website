@@ -1,5 +1,5 @@
 site:
-  name: Loomi
+  name: Loomii
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
