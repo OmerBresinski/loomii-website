@@ -1,9 +1,6 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -13,215 +10,124 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
   <Hero
     tagline="About us"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      alt: 'Company Image',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white"> Beautiful Website Templates</span>
+      Empowering SMBs with <br />
+      <span class="text-accent dark:text-white">Smarter Intelligence</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      In today&apos;s fast-moving world, decisions can&apos;t rely on guesswork. Loomii delivers the clarity to move
+      with confidence — surfacing the right signals at the right time. Competitive intelligence isn&apos;t a luxury —
+      it&apos;s a must. Our platform helps you think ahead, spot opportunities, and act with precision — without
+      drowning in data or complexity.
     </Fragment>
   </Hero>
 
-  <!-- Stats Widget ****************** -->
+  <!-- Meet the Founders Section -->
+  <section class="px-4 py-16 mx-auto max-w-7xl lg:py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold leading-tight tracking-tighter mb-4">Meet the Founders</h2>
+      <p class="text-xl text-gray-600 dark:text-slate-400">The minds behind Loomii</p>
+    </div>
 
-  <Stats
-    title="Statistics about us"
-    stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
-    ]}
-  />
+    <div class="grid gap-12 md:grid-cols-2">
+      <!-- Omer's Profile -->
+      <div class="flex flex-col items-center text-center">
+        <img
+          src="https://img.notionusercontent.com/s3/prod-files-secure%2F9eacf244-0997-4859-8541-dbccf7fb31ec%2F9c73f7e7-70bc-43e8-b5de-236c5adb88b2%2F3dcf9816-3478-4f49-a160-302c62631293.png/size/w=200?exp=1746869218&sig=4RQwCc0BmKZ99Q6yGFzW7njbAQqYKCCC07Nkg2D5Jb0&id=1cafef66-639c-80fd-a809-f4ab0d53ae21&table=block&userId=9447b52d-6b08-41a9-b134-822df1682cf2"
+          alt="Omer Bresinski"
+          class="w-48 h-48 rounded-full mb-6 object-cover"
+        />
+        <h3 class="text-2xl font-bold mb-2">Omer Bresinski- CTO</h3>
+        <!-- <p class="text-lg text-gray-600 dark:text-slate-400 mb-4"></p> -->
+        <p class="text-gray-600 dark:text-slate-400 mb-4">Omerbres@gmail.com</p>
+        <p class="text-gray-600 dark:text-slate-400 mb-4">
+          Omer Bresinski brings deep expertise in building scalable tech solutions for global audiences and SMBs alike.
+          At Amazon Prime Video in London, he led projects on the core Prime Video app, delivering features used by
+          hundreds of millions of users worldwide. His work sharpened his ability to create robust, user-focused systems
+          - skills he now applies to The Product's technical foundation. Before Amazon, Omer worked at Melio, a B2B SMB
+          fintech SaaS company, focusing on small business needs. He was also a core member at Fireberry, a CRM company,
+          driving its success in Israel.
+        </p>
+        <div class="mt-4">
+          <h4 class="font-bold mb-2">Key Strengths:</h4>
+          <p class="text-gray-600 dark:text-slate-400">
+            Full-stack development, scalable systems, SMB product expertise.
+          </p>
+          <h4 class="font-bold mt-4 mb-2">Why He's Here:</h4>
+          <p class="text-gray-600 dark:text-slate-400">
+            "I've seen how tech can transform businesses. We can now bring that power to SMBs affordably."
+          </p>
+        </div>
+      </div>
 
-  <!-- Features3 Widget ************** -->
+      <!-- Gilad's Profile -->
+      <div class="flex flex-col items-center text-center">
+        <img
+          src="https://img.notionusercontent.com/s3/prod-files-secure%2F9eacf244-0997-4859-8541-dbccf7fb31ec%2F051e808c-805c-40d4-a019-36233eae0fdf%2Feecddaf1-606c-4c3a-a8ad-5871d6086716.png/size/w=380?exp=1746869175&sig=pDM-QmCBHYgqWnbVzLKdodEdMegWged7rOscctJrml4&id=1d7fef66-639c-8041-b82b-f731b0f41de1&table=block&userId=9447b52d-6b08-41a9-b134-822df1682cf2"
+          alt="Gilad Bresinski"
+          class="w-48 h-48 rounded-full mb-6 object-cover"
+        />
+        <h3 class="text-2xl font-bold mb-2">Gilad Bresinski- CEO</h3>
+        <!-- <p class="text-lg text-gray-600 dark:text-slate-400 mb-4"></p> -->
+        <p class="text-gray-600 dark:text-slate-400 mb-4">Gilad0635@gmail.com</p>
+        <p class="text-gray-600 dark:text-slate-400 mb-4">
+          Gilad Bresinski combines top-tier analytical skills with hands-on leadership from elite and commercial
+          settings. In Unit 8200, Israel's premier intelligence unit, he served as a Data Analyst and Project Manager,
+          building critical systems under high stakes. His commercial experience includes leading a SaaS AdTech product
+          used globally by B2C and B2B clients, where he worked as a Full Stack Developer, Data Analyst Team Lead, and
+          Data/Business Analyst.
+        </p>
+        <div class="mt-4">
+          <h4 class="font-bold mb-2">Key Strengths:</h4>
+          <p class="text-gray-600 dark:text-slate-400">
+            Data analysis, full-stack development, project leadership, global SaaS experience.
+          </p>
+          <h4 class="font-bold mt-4 mb-2">Why He's Here:</h4>
+          <p class="text-gray-600 dark:text-slate-400">
+            "SMBs need a competitive edge. The Product turns data into their advantage."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
-    isBeforeContent={true}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Photography',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
-      },
-    ]}
-  />
+  <!-- Why We Are the Right Team Section -->
+  <section class="px-4 py-16 mx-auto max-w-7xl bg-gray-50 dark:bg-slate-900">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold leading-tight tracking-tighter mb-4">Why We Are the Right Team</h2>
+      <p class="text-xl text-gray-600 dark:text-slate-400 max-w-3xl mx-auto">
+        Omer and Gilad are a dynamic founding team building Loomii with purpose and precision. Omer brings hands-on
+        experience scaling tech at Amazon and crafting solutions tailored for SMBs. Gilad combines data-driven insights
+        from Unit 8200 with global SaaS leadership. Together, their technical depth and sharp understanding of market
+        needs position Loomii as a high-potential venture with a strong foundation for growth.
+      </p>
+    </div>
+  </section>
 
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
+  <!-- Contact Section -->
   <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
+    title="Get in Touch"
     tagline="Contact us"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Email us',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+          'Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.',
+        icon: 'tabler:mail',
       },
       {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+        title: 'Schedule a Demo',
+        description: 'See how our solutions can transform your business. Book a personalized demo with our team.',
+        icon: 'tabler:calendar',
       },
     ]}
   />
