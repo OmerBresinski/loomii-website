@@ -2,6 +2,9 @@
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { Image } from 'astro:assets';
+import omerImage from '../assets/images/omer-pic.png';
+import giladImage from '../assets/images/gilad-pic.png';
 
 const metadata = {
   title: 'About us',
@@ -43,11 +46,7 @@ const metadata = {
     <div class="grid gap-12 md:grid-cols-2">
       <!-- Omer's Profile -->
       <div class="flex flex-col items-center text-center">
-        <img
-          src="/src/assets/images/omer-pic.png"
-          alt="Omer Bresinski"
-          class="w-48 h-48 rounded-full mb-6 object-cover"
-        />
+        <Image src={omerImage} alt="Omer Bresinski" class="w-48 h-48 rounded-full mb-6 object-cover" />
         <h3 class="text-2xl font-bold mb-2">Omer Bresinski- CTO</h3>
         <!-- <p class="text-lg text-gray-600 dark:text-slate-400 mb-4"></p> -->
         <p class="text-gray-600 dark:text-slate-400 mb-4">omer@loomii.ai</p>
@@ -73,11 +72,7 @@ const metadata = {
 
       <!-- Gilad's Profile -->
       <div class="flex flex-col items-center text-center">
-        <img
-          src="/src/assets/images/gilad-pic.png"
-          alt="Gilad Bresinski"
-          class="w-48 h-48 rounded-full mb-6 object-cover"
-        />
+        <Image src={giladImage} alt="Gilad Bresinski" class="w-48 h-48 rounded-full mb-6 object-cover" />
         <h3 class="text-2xl font-bold mb-2">Gilad Bresinski- CEO</h3>
         <!-- <p class="text-lg text-gray-600 dark:text-slate-400 mb-4"></p> -->
         <p class="text-gray-600 dark:text-slate-400 mb-4">gilad@loomii.ai</p>
