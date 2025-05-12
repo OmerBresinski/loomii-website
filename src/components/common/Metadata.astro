@@ -1,6 +1,7 @@
 ---
 import merge from 'lodash.merge';
 import { AstroSeo } from '@astrolib/seo';
+import socialPreview from '~/assets/images/social-preview.png';
 
 import type { Props as AstroSeoProps } from '@astrolib/seo';
 
@@ -35,7 +36,13 @@ const seoProps: AstroSeoProps = merge(
     openGraph: {
       url: canonical,
       site_name: SITE?.name,
-      images: [],
+      images: [
+        {
+          url: socialPreview.src,
+          width: socialPreview.width,
+          height: socialPreview.height,
+        },
+      ],
       locale: I18N?.language || 'en',
       type: 'website',
     },
