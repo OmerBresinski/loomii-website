@@ -1,10 +1,36 @@
 ---
-import favIcon from '~/assets/favicons/favicon.ico';
+// import favIcon from '~/assets/favicons/favicon.ico';
 import favIconSvg from '~/assets/favicons/favicon.svg';
+import favIconLightSvg from '~/assets/favicons/faviconLightMode.svg';
 import appleTouchIcon from '~/assets/favicons/apple-touch-icon.png';
 ---
 
-<link rel="shortcut icon" href={favIcon} />
-<link rel="icon" type="image/svg+xml" href={favIconSvg.src} />
-<link rel="mask-icon" href={favIconSvg.src} color="#8D46E7" />
+<link rel="shortcut icon" href={favIconSvg.src} id="favicon" />
+<link rel="icon" type="image/svg+xml" href={favIconSvg.src} id="favicon-svg" />
+<link rel="mask-icon" href={favIconSvg.src} color="#FFFFFF" />
 <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon.src} />
+
+<script define:vars={{ favIconSvg: favIconSvg.src, favIconLightSvg: favIconLightSvg.src }}>
+  function updateFavicons() {
+    try {
+      const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const newSrc = isDarkMode ? favIconSvg : favIconLightSvg;
+
+      const favicon = document.getElementById('favicon');
+      const faviconSvg = document.getElementById('favicon-svg');
+
+      if (favicon && faviconSvg) {
+        favicon.href = newSrc;
+        faviconSvg.href = newSrc;
+      } else {
+        console.warn('Favicon elements not found. Ensure elements with IDs "favicon" and "favicon-svg" exist.');
+      }
+    } catch (error) {
+      console.error('Error updating favicon:', error);
+    }
+  }
+
+  // Initial update and watch for theme changes
+  updateFavicons();
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicons);
+</script>
