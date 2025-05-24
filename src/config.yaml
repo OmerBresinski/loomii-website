@@ -19,20 +19,21 @@ There are two kinds of businesses — those who know what's happening, and those
   openGraph:
     site_name: Loomii
     url: 'https://www.loomii.ai'
-    title: 'Loomii.ai' # Explicitly set og:title
-    description: "Loomii gives SMBs an unfair advantage. There are two kinds of businesses — those who know what's happening, and those who find out too late." # Explicitly set og:description
+    title: 'Loomii.ai'
+    description: "Loomii gives SMBs an unfair advantage. There are two kinds of businesses — those who know what's happening, and those who find out too late."
     images:
       - url: 'https://www.loomii.ai/social-preview.png'
         width: 1200
         height: 628
     type: website
+    locale: en_US  # ✅ Manually added to fix Facebook OG error
   twitter:
     handle: '@onwidget'
     site: '@onwidget'
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: en  # ✅ Restored to prevent Astro theme schema error
   textDirection: ltr
 
 apps:
@@ -42,25 +43,25 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/%slug%'
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'category'
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
         index: false
 
@@ -70,7 +71,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: null
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system'
