@@ -1,6 +1,6 @@
 site:
   name: Loomii
-  site: 'https://astrowind.vercel.app'
+  site: 'https://loomii.ai'
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,10 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Loommi.ai
+    template: '%s — Loommi.ai'
+  description: "Loomii gives SMBs an unfair advantage.
+There are two kinds of businesses — those who know what's happening, and those who find out too late."
   robots:
     index: true
     follow: true
