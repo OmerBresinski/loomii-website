@@ -32,7 +32,7 @@ There are two kinds of businesses — those who know what's happening, and those
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: en_US
   textDirection: ltr
 
 apps:
