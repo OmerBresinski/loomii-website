@@ -5,7 +5,7 @@ export const headerData = {
     { text: 'Home', href: '/' },
     { text: 'About Us', href: '/about' },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
